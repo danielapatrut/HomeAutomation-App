@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/back"
     tools:context=".MainActivity">
 
     <TextView
@@ -17,22 +17,24 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="173dp"
         android:gravity="center"
+        android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/Temperature_text"
-        android:layout_width="139dp"
-        android:layout_height="71dp"
+        android:layout_width="113dp"
+        android:layout_height="70dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="211dp"
-        android:layout_marginLeft="211dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="62dp"
         android:gravity="center"
+        android:textColor="#FFFFFF"
         android:textSize="30sp" />
 
     <TextView
@@ -45,8 +47,9 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
-        android:layout_marginTop="246dp"
+        android:layout_marginTop="258dp"
         android:gravity="center"
+        android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
     <TextView
@@ -57,10 +60,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="301dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="317dp"
         android:gravity="center"
+        android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
     <TextView
@@ -73,22 +77,29 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
-        android:layout_marginTop="361dp"
+        android:layout_marginTop="378dp"
         android:gravity="center"
+        android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/Humidity_text"
-        android:layout_width="96dp"
-        android:layout_height="56dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="41dp"
-        android:layout_marginLeft="41dp"
-        android:layout_marginTop="46dp"
+        android:layout_width="87dp"
+        android:layout_height="58dp"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="39dp"
         android:gravity="center"
+        android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
     <ProgressBar
@@ -101,10 +112,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="215dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="216dp"
         android:indeterminateOnly="false"
         android:progress="60"
         android:progressDrawable="@drawable/circle"
@@ -122,7 +133,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="34dp"
-        android:text="MOTION ALARM" />
+        android:text="MOTION ALARM"
+        app:backgroundTint="#7B4FCA" />
 
     <ProgressBar
         android:id="@+id/progressBar2"
@@ -134,8 +146,36 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="73dp"
         android:layout_marginLeft="73dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="233dp"
         android:indeterminate="false"
         android:max="100" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="155dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="9dp"
+        android:text="Humidity:"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="169dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="189dp"
+        android:layout_marginLeft="189dp"
+        android:layout_marginTop="9dp"
+        android:text="Temperature:"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
 </RelativeLayout>
